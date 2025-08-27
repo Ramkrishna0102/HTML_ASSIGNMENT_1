@@ -120,9 +120,6 @@ mobileMenuButton.addEventListener('click', function() {
 
 
 
-
-    
-    
     function rotateToIndex(targetIndex) {
         if (targetIndex === currentIndex) return;
         
@@ -152,7 +149,7 @@ mobileMenuButton.addEventListener('click', function() {
         const ring = rings[index];
         document.getElementById('ring-price').textContent = ring.price;
         document.getElementById('ring-offer').textContent = ring.offer;
-        document.getElementById('ring-code').innerHTML = `Use Code: <span class="text-yellow-600">${ring.code}</span>`;
+        document.getElementById('ring-code').innerHTML = `<span class="font-unbolt">Use Code:</span> <span class="text-gray-700  border-[#D6D6D6] rounded px-2 ml-2 font-medium">${ring.code}</span>`;
         document.getElementById('small-ring-name').textContent = ring.name.toUpperCase();
     }
     
