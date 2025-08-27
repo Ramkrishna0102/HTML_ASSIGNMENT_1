@@ -149,8 +149,8 @@ mobileMenuButton.addEventListener('click', function() {
         const ring = rings[index];
         document.getElementById('ring-price').textContent = ring.price;
         document.getElementById('ring-offer').textContent = ring.offer;
-        document.getElementById('ring-code').innerHTML = `<span class="font-unbolt">Use Code:</span> <span class="text-gray-700  border-[#D6D6D6] rounded px-2 ml-2 font-medium">${ring.code}</span>`;
-        document.getElementById('small-ring-name').textContent = ring.name.toUpperCase();
+        document.getElementById('ring-code').innerHTML = `<span class="font-unbolt">Use Code:</span> <span class="text-gray-700  border-[#D6D6D6] rounded px-2 ml-2 font-medium  ">${ring.code}</span>`;
+        document.getElementById('small-ring-name').innerHTML = `<span class="absolute top-[-55%] left-[37.2%] text-[25px] leading-[60px] font-bold text-[#151515]">${ring.name}</span>`;
     }
     
     
